@@ -424,44 +424,77 @@ body.hovering .cursor-outline {
 }
 
 /* Projects Section (Stacked) */
+/* =========================
+   PROJECTS SECTION (STACKED SCROLL – FULL FIX)
+   Requirement:
+   - On scroll, cards stack
+   - All previous cards remain visible
+   - No card goes behind another
+========================= */
+
 .projects-stack {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-bottom: 420px;
+    /* ensures last card completes stacking */
 }
 
+/* Base card */
 .project-card-stacked {
+    position: sticky;
+    top: 120px;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 20px;
     padding: 40px;
-    position: sticky;
-    top: 100px;
-    /* Sticky effect */
     backdrop-filter: blur(20px);
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, border-color 0.3s ease;
+    will-change: transform;
+    isolation: isolate;
+    /* prevents stacking context bugs */
 }
 
-/* Stacking offset to make them visible when stacked */
+/* Stacking offsets + guaranteed order */
 .project-card-stacked:nth-child(1) {
-    top: 100px;
+    top: 120px;
+    z-index: 10;
 }
 
 .project-card-stacked:nth-child(2) {
-    top: 120px;
+    top: 145px;
+    z-index: 20;
 }
 
 .project-card-stacked:nth-child(3) {
-    top: 140px;
+    top: 170px;
+    z-index: 30;
 }
 
+.project-card-stacked:nth-child(4) {
+    top: 195px;
+    z-index: 40;
+}
+
+.project-card-stacked:nth-child(5) {
+    top: 220px;
+    z-index: 50;
+}
+
+/* Depth effect while stacked */
+.project-card-stacked:not(:first-child) {
+    transform: scale(0.97);
+}
+
+/* Active card focus */
 .project-card-stacked:hover {
+    transform: translateY(-6px) scale(1);
     border-color: var(--accent-color);
-    transform: translateY(-5px);
 }
 
+/* Project content */
 .project-info h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -481,18 +514,19 @@ body.hovering .cursor-outline {
     margin-top: 30px;
 }
 
-.icon-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    transition: color 0.2s;
-}
+/* =========================
+   MOBILE: disable stacking cleanly
+========================= */
+@media (max-width: 768px) {
+    .project-card-stacked {
+        position: relative;
+        top: unset;
+        transform: none !important;
+    }
 
-.icon-link:hover {
-    color: var(--accent-color);
+    .projects-stack {
+        padding-bottom: 0;
+    }
 }
 
 /* Certifications Section */
