@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Typing Effect ---
     const typingText = document.querySelector('.typing-text');
-    const phrases = ["AI/ML Engineer", "Building systems that learn.", "Turning data into intelligence."];
+    const phrases = ["AI/ML Engineer", "MERN Stack Developer", "Building systems that learn.", "Turning data into intelligence."];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -186,6 +186,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         el.addEventListener('mouseleave', () => {
             document.body.classList.remove('hovering');
+        });
+    });
+
+    // --- Certification Filtering ---
+    const certTabs = document.querySelectorAll('.cert-tab');
+    const certCards = document.querySelectorAll('.cert-card');
+
+    certTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            certTabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            tab.classList.add('active');
+
+            const filter = tab.getAttribute('data-filter');
+
+            certCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+
+                if (filter === 'all' || filter === category) {
+                    card.classList.remove('hide');
+                    card.classList.add('show');
+                } else {
+                    card.classList.add('hide');
+                    card.classList.remove('show');
+                }
+            });
         });
     });
 
