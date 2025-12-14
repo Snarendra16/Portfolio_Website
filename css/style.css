@@ -128,15 +128,13 @@ button {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .logo {
-    font-family: var(--font-mono);
-    font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: -0.05em;
+    display: none;
 }
 
 .nav-links {
@@ -162,6 +160,8 @@ button {
     padding: 5px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
+    position: absolute;
+    right: 20px;
 }
 
 #theme-toggle:hover {
