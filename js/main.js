@@ -97,6 +97,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const data = JSON.parse(dataScript.textContent);
 
+        let linkHtml = '';
+        if (data.link) {
+            linkHtml = `
+            <div class="modal-section" style="text-align: center; margin-top: 20px;">
+                <a href="${data.link}" target="_blank" class="contact-btn" style="display: inline-block;">View Certificate</a>
+            </div>`;
+        }
+
+        let mediaHtml = '';
+        if (data.image && data.image.toLowerCase().endsWith('.pdf')) {
+            mediaHtml = `<iframe src="${data.image}" width="100%" height="500px" style="border: none; border-radius: 8px;"></iframe>`;
+        } else {
+            mediaHtml = `<img src="${data.image}" alt="${data.title}" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--card-border);">`;
+        }
+
         modalBody.innerHTML = `
             <h2 class="modal-title">${data.title}</h2>
             <div class="modal-section">
@@ -108,8 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${data.date}</p>
             </div>
             <div class="modal-section" style="text-align: center;">
-                <img src="${data.image}" alt="${data.title}" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--card-border);">
+                ${mediaHtml}
             </div>
+            ${linkHtml}
         `;
 
         modalOverlay.classList.add('active');
