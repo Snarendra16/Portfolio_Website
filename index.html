@@ -450,6 +450,8 @@
                 <button class="cert-tab" data-filter="oracle">Oracle Cloud Infrastructure(OCI)</button>
                 <button class="cert-tab" data-filter="unstop">Unstop</button>
                 <button class="cert-tab" data-filter="udemy">Udemy</button>
+                <button class="cert-tab" data-filter="LL">Linkedin Learning</button>
+                <button class="cert-tab" data-filter="cisco">Cisco</button>
             </div>
 
             <div class="cert-grid">
@@ -457,16 +459,17 @@
                 <div class="cert-card fade-in-up delay-200" data-category="coursera"
                     onclick="openCertModal('cert-coursera-1')">
                     <div class="cert-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
-                        </svg>
+                        <img src="assets/images/coursera.png" style="border-radius: 12px;" alt="" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                        </img>
                     </div>
                     <div class="cert-content">
-                        <h3>Deep Learning Specialization</h3>
+                        <h3>Google Cybersecurity Professional Certificate </h3>
                         <p>Coursera</p>
-                        <span class="cert-date">2022</span>
+                        <span class="cert-date">2023</span>
                     </div>
                 </div>
 
@@ -539,6 +542,45 @@
                         <h3>OCI AI Foundation</h3>
                         <p>Oracle</p>
                         <span class="cert-date">2025</span>
+                    </div>
+                </div>
+
+
+
+                <!-- Cisco cards  -->
+                <!-- cert1 -->
+                <div class="cert-card fade-in-up delay-200" data-category="cisco"
+                    onclick="openCertModal('cert-cisco-2')">
+                    <div class="cert-icon">
+                        <img src="assets/images/cisco.png" style="border-radius: 12px;" alt="" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                        </img>
+                    </div>
+                    <div class="cert-content">
+                        <h3>CCNA: Introduction to Networks</h3>
+                        <p>Cisco</p>
+                        <span class="cert-date">2024</span>
+                    </div>
+                </div>
+
+                <!-- cert2 -->
+                <div class="cert-card fade-in-up delay-200" data-category="cisco"
+                    onclick="openCertModal('cert-cisco-1')">
+                    <div class="cert-icon">
+                        <img src="assets/images/cisco.png" style="border-radius: 12px;" alt="" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                        </img>
+                    </div>
+                    <div class="cert-content">
+                        <h3>CCNA: Introduction to Cybersecurity</h3>
+                        <p>Cisco</p>
+                        <span class="cert-date">2024</span>
                     </div>
                 </div>
 
@@ -695,9 +737,9 @@
     <!-- Data for Certifications (Hidden) -->
     <script id="cert-coursera-1-data" type="application/json">
         {
-            "title": "Deep Learning Specialization",
-            "issuer": "Coursera / DeepLearning.AI",
-            "date": "2022",
+            "title": "Google Cybersecurity Professional Certificate",
+            "issuer": "Coursera / Google",
+            "date": "2023",
             "image": "assets/images/coursera-deep-learning.jpg",
             "link": "#"
         }
@@ -710,44 +752,65 @@
             "issuer": "Oracle",
             "date": "2025",
             "image": "assets/documents/OCI/OCI_GenAI.png",
-            "link": "https://drive.google.com/file/d/1zISB8cX_CjyI5qsoo7LYKjSfpMV2o621/view?usp=drive_link"
+            "link": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=E9A75438664C5BD97B9665EEF3266CAA26368E414E24F79396B99D7803AF784F "
         }
     </script>
 
     <!-- OCI cert 2 -->
-    <script id="cert-oracle-1-data" type="application/json">
+    <script id="cert-oracle-2-data" type="application/json">
         {
-            "title": "OCI Foundations Gen AI Professional",
+            "title": "OCI Data Science Professional",
             "issuer": "Oracle",
             "date": "2025",
-            "image": "assets/documents/OCI/OCI_GenAI.png",
-            "link": "https://drive.google.com/file/d/1zISB8cX_CjyI5qsoo7LYKjSfpMV2o621/view?usp=drive_link"
+            "image": "assets/documents/OCI/OCI_DS_Professional.png",
+            "link": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=C0857D443E75B28F51B109218D0BCF2049B7D9904A4DA997376FB331BD560A6C "
         }
     </script>
 
     <!-- OCI cert 3 -->
-    <script id="cert-oracle-1-data" type="application/json">
+    <script id="cert-oracle-3-data" type="application/json">
         {
-            "title": "OCI Foundations Gen AI Professional",
+            "title": "OCI AI Vector Search Professional",
             "issuer": "Oracle",
             "date": "2025",
-            "image": "assets/documents/OCI/OCI_GenAI.png",
-            "link": "https://drive.google.com/file/d/1zISB8cX_CjyI5qsoo7LYKjSfpMV2o621/view?usp=drive_link"
+            "image": "assets/documents/OCI/OCI_Vector.png",
+            "link": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=75D33DA9A706C8D149C73EA0BE665ADFA2582689FF0433999AAA931544B415FC "
         }
     </script>
 
     <!-- OCI cert 4 -->
-    <script id="cert-oracle-1-data" type="application/json">
+    <script id="cert-oracle-4-data" type="application/json">
         {
-            "title": "OCI Foundations Gen AI Professional",
+            "title": "OCI AI Foundational Associate",
             "issuer": "Oracle",
             "date": "2025",
-            "image": "assets/documents/OCI/OCI_GenAI.png",
-            "link": "https://drive.google.com/file/d/1zISB8cX_CjyI5qsoo7LYKjSfpMV2o621/view?usp=drive_link"
+            "image": "assets/documents/OCI/OCI_AI_Foundation.png",
+            "link": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=C0857D443E75B28F51B109218D0BCF2049B7D9904A4DA997376FB331BD560A6C"
         }
     </script>
 
+    <!-- Cisco cerifications -->
+    <!-- Cert 1 -->
+    <script id="cert-cisco-1-data" type="application/json">
+        {
+            "title": "CCNA:Introduction to cybersecurity",
+            "issuer": "Cisco",
+            "date": "2025",
+            "image": "assets/documents/cisco/cs.png",
+            "link": "https://www.credly.com/badges/ad7b0803-73f4-4760-b0f4-5a14ba8b9916/public_url"
+        }
+    </script>
 
+    <!-- cert 2 -->
+    <script id="cert-cisco-2-data" type="application/json">
+        {
+            "title": "CCNA:Introduction to Networks",
+            "issuer": "Cisco",
+            "date": "2025",
+            "image": "assets/documents/cisco/cs.png",
+            "link": "https://www.credly.com/badges/b2e15b50-2e86-4e9f-acc2-32f4a221c4af/public_url"
+        }
+    </script>
     <script id="cert-unstop-1-data" type="application/json">
         {
             "title": "Coding Challenge Winner",
