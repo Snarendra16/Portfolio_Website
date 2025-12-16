@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Typing Effect ---
     const typingText = document.querySelector('.typing-text');
-    const phrases = ["AI/ML Engineer", "MERN Stack Developer", "Building systems that learn.", "Turning data into intelligence."];
+    const phrases = ["ML Engineer", "Full-Stack Developer", "Building intelligent systems", "Solving problems with code"];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -231,5 +231,39 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // --- Contact Form Handler ---
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form values
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+
+            // Create mailto link
+            const mailtoLink = `mailto:narendrasaraf16@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+
+            // Open mailto link
+            window.location.href = mailtoLink;
+
+            // Show success message
+            formStatus.textContent = 'Opening your email client... Thank you for reaching out!';
+            formStatus.className = 'form-status success';
+
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                contactForm.reset();
+                formStatus.className = 'form-status';
+                formStatus.textContent = '';
+            }, 3000);
+        });
+    }
 
 });

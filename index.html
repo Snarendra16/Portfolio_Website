@@ -25,7 +25,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#timeline">Timeline</a></li>
+                <!-- <li><a href="#timeline">Timeline</a></li> -->
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="assets/documents/Resume.pdf" target="_blank" class="nav-btn">Resume</a></li>
             </ul>
@@ -72,12 +72,16 @@
             <div class="about-text fade-in-up">
                 <h2 class="section-title">About Me</h2>
                 <p>
-                    I am an engineer driven by the question "What if?". My journey sits at the intersection of rigorous
-                    systems engineering and the fluid world of machine learning.
+                    I'm a software engineer passionate about building intelligent systems. Currently pursuing my degree
+                    in Computer Engineering,
+                    I spend most of my time working with ML models, building web applications, and solving complex
+                    problems through code.
                 </p>
                 <p>
-                    I don't just train models; I build the infrastructure that makes them reliable, scalable, and
-                    impactful. I believe in code that is as clean as the mathematics behind it.
+                    My focus is on creating practical solutions—from predictive models for IPO analysis to full-stack
+                    hospital management systems.
+                    I enjoy the entire development cycle: understanding the problem, designing the architecture, writing
+                    clean code, and deploying production-ready systems.
                 </p>
             </div>
             <div class="about-cards fade-in-up delay-100">
@@ -239,11 +243,13 @@
                 <div class="project-card-stacked fade-in-up" onclick="openModal('proj1')">
                     <div class="project-info">
                         <h3>Causal Analysis & Bias Mitigation of LLMs</h3>
-                        <p class="project-desc">A causal inference based project that analyzes and reduces bias in Large
-                            Language Models beyond simple correlation metrics. It identifies how sensitive attributes
-                            influence model outputs and applies structured interventions to mitigate unfair behavior.
-                            The work emphasizes explainability, responsible AI, and bias reduction without significant
-                            performance loss.</p>
+                        <p class="project-desc">Built a system to identify and reduce bias in language models using
+                            causal inference techniques.
+                            Instead of just measuring correlation, I analyzed how sensitive attributes actually
+                            influence outputs and implemented
+                            interventions to reduce unfair predictions. The challenge was maintaining model performance
+                            while improving fairness—achieved
+                            measurable bias reduction with minimal accuracy trade-off.</p>
                         <div class="tech-tags">
                             <span class="skill-card">HuggingFace Transformers &nbsp;</span>&nbsp;<span
                                 class="skill-card">DoWhy &nbsp;</span>&nbsp;<span
@@ -283,11 +289,13 @@
                 <div class="project-card-stacked fade-in-up" onclick="openModal('proj2')">
                     <div class="project-info">
                         <h3>IPO Success Scoreboard</h3>
-                        <p class="project-desc">The IPO Success Scoreboard predicts IPO success using an optimized
-                            XGBoost/LightGBM model on historical financial and market data. It applies feature
-                            engineering and SHAP-based interpretability to explain key drivers of IPO performance. The
-                            project includes an end-to-end data pipeline and a visualization dashboard to present
-                            success probability and risk insights.</p>
+                        <p class="project-desc">Created a machine learning system to evaluate IPO potential using
+                            historical financial data.
+                            Combined XGBoost and LightGBM models with extensive feature engineering to predict success
+                            probability. Added SHAP
+                            analysis to make predictions interpretable—investors can see exactly which factors drive the
+                            score. Deployed with
+                            a web dashboard for real-time evaluation.</p>
                         <div class="tech-tags">
                             <span class="skill-card">Scikit-learn</span>&nbsp;<span
                                 class="skill-card">XGBoost</span>&nbsp;<span
@@ -325,12 +333,13 @@
                 <div class="project-card-stacked fade-in-up" onclick="openModal('proj3')">
                     <div class="project-info">
                         <h3>Hospital Management Service Platform</h3>
-                        <p class="project-desc">The Hospital Management Service Platform is a centralized system
-                            designed to digitize and streamline core hospital operations. It manages patient records,
-                            appointments, and administrative workflows through a structured backend and database-driven
-                            architecture. The platform improves operational efficiency by reducing manual processes and
-                            ensuring consistent data access across departments. This project demonstrates practical
-                            system design skills applied to real-world healthcare management challenges.</p>
+                        <p class="project-desc">Full-stack web application to manage hospital operations—patient
+                            registration, appointments,
+                            medical records, and billing. Built with Vue.js frontend and Flask backend, focusing on
+                            clean UI/UX and reliable
+                            data handling. The goal was to replace fragmented manual processes with a single unified
+                            system that doctors and
+                            administrators could actually use.</p>
                         <div class="tech-tags">
                             <span class="skill-card">vue.js</span>&nbsp;<span class="skill-card">flask</span>&nbsp;<span
                                 class="skill-card">JavaScript</span>&nbsp;<span
@@ -367,12 +376,13 @@
                 <div class="project-card-stacked fade-in-up" onclick="openModal('proj4')">
                     <div class="project-info">
                         <h3>Eventify</h3>
-                        <p class="project-desc">Eventify is a comprehensive event management platform designed to
-                            streamline event planning, registration, and participant engagement. It supports scheduling,
-                            virtual meeting integration, and real-time notifications through a unified backend-driven
-                            system. The platform reduces operational complexity for organizers while improving the
-                            experience for attendees. This project highlights practical full-stack development and
-                            system integration skills for modern event workflows.</p>
+                        <p class="project-desc">Event management platform handling everything from registration to
+                            virtual meetings.
+                            Built with the MERN stack—MongoDB for data, Express/Node for the backend, and React for the
+                            interface. Integrated
+                            real-time notifications and scheduling features. The hardest part was coordinating multiple
+                            services (email, video calls,
+                            reminders) into a smooth user experience.</p>
                         <div class="tech-tags">
                             <span class="skill-card">MongoDB</span>&nbsp;<span
                                 class="skill-card">Node.js</span>&nbsp;<span class="skill-card">React</span>&nbsp;<span
@@ -399,13 +409,13 @@
                 <div class="project-card-stacked fade-in-up" onclick="openModal('proj5')">
                     <div class="project-info">
                         <h3>Learnemon</h3>
-                        <p class="project-desc">Learnemon is a gamified, interactive learning platform designed to make
-                            coding education fun and engaging. It uses structured lessons, mini-games, quizzes, and a
-                            reward system (XP and coins) to motivate learners and track progress. Features include a
-                            simulated terminal for practice, flashcards, and a leaderboard to foster competition. This
-                            project showcases full-stack development using Flask, SQLite, and modern frontend
-                            technologies to create an educational experience that feels more like a game than a
-                            tutorial.</p>
+                        <p class="project-desc">Gamified coding education platform that makes learning feel like playing
+                            a game.
+                            Built with Flask and SQLite, featuring lessons, quizzes, XP progression, and a simulated
+                            terminal for practice.
+                            Added competitive elements like leaderboards and achievements to keep users engaged. The
+                            idea was simple: make learning
+                            code addictive instead of boring.</p>
                         <div class="tech-tags">
                             <span class="skill-card">flask</span>&nbsp;<span class="skill-card">RESTful
                                 API</span>&nbsp;<span class="skill-card">Jinja2 Template</span>&nbsp;<span
@@ -722,14 +732,92 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
-        <div class="container text-center">
-            <h2 class="section-title fade-in-up">Let's Connect</h2>
-            <p class="contact-intro fade-in-up delay-100"></p>
-            <div class="contact-links fade-in-up delay-200">
-                <a href="mailto:narendrasaraf16@gmail.com" class="contact-btn">Email</a>
-                <a href="https://www.linkedin.com/in/narendra-saraf/" class="contact-btn">LinkedIn</a>
-                <a href="https://github.com/Snarendra16" class="contact-btn">GitHub</a>
-                <a href="assets/documents/Resume.pdf" class="contact-btn outline">Resume</a>
+        <div class="container">
+            <h2 class="section-title fade-in-up" style="text-align: center;">Let's Connect</h2>
+            <p class="contact-intro fade-in-up delay-100" style="text-align: center;"></p>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper fade-in-up delay-100">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div id="form-status" class="form-status"></div>
+                </div>
+
+                <!-- Contact Info & Social Links -->
+                <div class="contact-info-wrapper fade-in-up delay-200">
+                    <div class="contact-info-card">
+                        <h3>Get in Touch</h3>
+                        <p>Looking to collaborate on a project or just want to chat about tech? Feel free to reach out.
+                        </p>
+
+                        <div class="contact-detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:narendrasaraf16@gmail.com">narendrasaraf16@gmail.com</a>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/narendra-saraf/" target="_blank" class="social-link"
+                                aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Snarendra16" target="_blank" class="social-link"
+                                aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="assets/documents/Resume.pdf" target="_blank" class="social-link"
+                                aria-label="Resume">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -754,46 +842,46 @@
     <script id="proj1-data" type="application/json">
         {
             "title": "Causal Analysis and Bias Mitigation of LLMs",
-            "problem": "Large Language Models exhibit hidden biases that are difficult to detect and mitigate using correlation-based evaluation alone.",
-            "approach": "Applied causal inference techniques to model relationships between sensitive attributes and model outputs, and introduced controlled interventions to reduce bias while preserving performance.",
-            "outcome": "Demonstrated measurable bias reduction across evaluated prompts without significant degradation in response quality.",
-            "learned": "Gained practical experience in causal modeling, fairness metrics, and explainable bias mitigation strategies for modern LLMs."
+            "problem": "LLMs can have hidden biases that correlation metrics alone don't catch. I wanted to go deeper and understand the actual causal relationships between inputs and biased outputs.",
+            "approach": "Used DoWhy for causal inference to map how sensitive attributes influence model predictions. Then implemented interventions to reduce bias while keeping the model's performance intact.",
+            "outcome": "Achieved measurable bias reduction without hurting model quality. The SHAP explanations made it clear which factors were driving unfair predictions.",
+            "learned": "This taught me a lot about fairness in ML—going beyond accuracy metrics to actually understanding and fixing the root causes of bias."
         }
     </script>
     <script id="proj2-data" type="application/json">
         {
             "title": "IPO Success Scoreboard",
-            "problem": "Investors lack a structured and data-driven way to evaluate the potential success and risk of upcoming IPOs.",
-            "approach": "Built a data analysis and machine learning pipeline to aggregate IPO-related financial and market features, perform preprocessing and exploratory analysis, and compute a composite success score for comparative evaluation.",
-            "outcome": "Produced an interpretable IPO scoring system that highlights relative strength, risk factors, and potential performance trends across companies.",
-            "learned": "Developed hands-on experience in financial data analysis, feature engineering, model evaluation, and translating ML outputs into decision-support insights."
+            "problem": "Evaluating IPOs is tough—there's tons of financial data but no simple way to compare companies objectively. I wanted to build something that could score IPO potential automatically.",
+            "approach": "Collected historical IPO data and built an ML pipeline with XGBoost and LightGBM. Added SHAP for interpretability so users can see why a score is high or low.",
+            "outcome": "Created a working web app that gives each IPO a success probability score. Deployed it on Render with a dashboard showing key risk factors and predictions.",
+            "learned": "Financial ML is tricky—learned a lot about feature engineering with market data and making predictions explainable for non-technical users."
         }
     </script>
     <script id="proj3-data" type="application/json">
         {
             "title": "Hospital Management Service Platform",
-            "problem": "Hospitals often rely on fragmented or manual systems for managing patients, appointments, records, and billing, leading to inefficiencies and data inconsistency.",
-            "approach": "Developed a centralized hospital management platform to handle patient registration, appointment scheduling, medical records, and administrative workflows using a structured backend and database-driven design.",
-            "outcome": "Enabled streamlined hospital operations with improved data organization, faster access to patient information, and reduced administrative overhead.",
-            "learned": "Gained hands-on experience in backend system design, database modeling, CRUD workflows, and building scalable service-oriented healthcare applications."    
+            "problem": "Hospitals were juggling multiple systems for patients, appointments, and records. Everything was disconnected. The goal was to build one unified system.",
+            "approach": "Built a full-stack app with Vue.js frontend and Flask backend. Designed a clean database schema to handle patient records, appointments, and billing in one place.",
+            "outcome": "Hospital staff can now manage everything from a single dashboard—no more switching between systems. Faster lookups, fewer errors.",
+            "learned": "Real-world system design is messy. Learned how to handle complex user workflows and make UX simple even when the backend is complicated."    
         }   
     </script>
     <script id="proj4-data" type="application/json">
         {
-            "title": "Eventify – Event Management & Engagement Platform",
-            "problem": "Managing events across registrations, scheduling, virtual sessions, and real-time notifications is often fragmented and inefficient for organizers and participants.",
-            "approach": "Built a full-stack event management platform enabling event creation, participant registration, scheduling, and virtual meeting integration using a modular backend and real-time notification workflows.",
-            "outcome": "Delivered a unified system that simplifies event coordination, improves participant engagement, and supports seamless virtual and hybrid event experiences.",
-            "learned": "Strengthened skills in full-stack development, API integration, real-time communication, and designing scalable, user-centric event management systems."
+            "title": "Eventify – Event Management Platform",
+            "problem": "Event organizers were using separate tools for registration, scheduling, emails, and video calls. I wanted to combine everything into one platform.",
+            "approach": "Used the MERN stack to build a platform that handles registrations, schedules, virtual meetings, and notifications. Integrated with external APIs for email and video.",
+            "outcome": "Organizers can now run entire events from one dashboard. The hardest part was keeping real-time notifications in sync across all features.",
+            "learned": "API integration and real-time features are hard to get right. Learned a lot about WebSockets and handling async operations cleanly."
         }
     </script>
     <script id="proj5-data" type="application/json">
         {
             "title": "Learnemon – Gamified Learning Platform",
-            "problem": "Traditional code learning platforms are often boring and lack interactive elements to keep learners engaged.",
-            "approach": "Built a gamified learning platform using Flask, SQLite, and Bootstrap that combines interactive lessons, mini-games, quizzes, and progress tracking to make coding fun and engaging.",
-            "outcome": "Delivered a feature-rich, user-centric app where learners earn XP and coins, track progress, compete on leaderboards, and practice coding in a simulated terminal environment.",
-            "learned": "Gained hands-on experience in full-stack development with Flask, database modeling with SQLAlchemy, integrating UI/UX gamification elements, and managing user authentication and game logic."  
+            "problem": "Learning to code can be really dry. I wanted to make something that felt more like a game—where you actually want to keep going.",
+            "approach": "Built with Flask and SQLite. Added XP, levels, coins, leaderboards, and a simulated terminal. Made the UI feel like an RPG instead of a typical learning site.",
+            "outcome": "Created a working platform where users actually get hooked on learning. The gamification worked—people kept coming back to level up.",
+            "learned": "Gamification really works when done right. Also learned a ton about Flask's session management and building engaging user experiences."  
         }
     </script>
 
