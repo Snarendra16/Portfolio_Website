@@ -27,6 +27,7 @@
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#timeline">Timeline</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/documents/Resume.pdf" target="_blank" class="nav-btn">Resume</a></li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle Dark Mode">
                 <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -57,12 +58,12 @@
                 <span class="typing-text"></span><span class="cursor">|</span>
             </p>
         </div>
-        <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+        <!-- <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
             <span class="arrow"></span>
-        </a>
+        </a> -->
     </section>
 
     <!-- About Section -->
@@ -80,17 +81,8 @@
                 </p>
             </div>
             <div class="about-cards fade-in-up delay-100">
-                <div class="glass-card float-card p-1">
-                    <h3>Focus</h3>
-                    <p>LLMs, DSA, AI/ML,MLOps</p>
-                </div>
-                <div class="glass-card float-card p-2">
-                    <h3>Stack</h3>
-                    <p>Java, Python, MERN, ML, PyTorch, Docker, AWS</p>
-                </div>
-                <div class="glass-card float-card p-3">
-                    <h3>Goal</h3>
-                    <p>Architecting systems with intelligence</p>
+                <div class="about-image-wrapper">
+                    <img src="assets/images/profile-placeholder(1).jpg" alt="Profile Picture" class="about-profile-img">
                 </div>
             </div>
         </div>
@@ -438,6 +430,21 @@
             </div>
         </div>
     </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Experience & Extra Curricular Activities</h2>
+            <div class="experience-cards fade-in-up delay-100">
+                <div class="experience-card">
+                    <h3>Software Engineer</h3>
+                    <p>Google</p>
+                    <p>2023 - Present</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Certifications Section -->
     <section id="certifications" class="section certifications-section">
         <div class="container">
@@ -448,7 +455,7 @@
                 <button class="cert-tab active" data-filter="all">All</button>
                 <button class="cert-tab" data-filter="coursera">Coursera</button>
                 <button class="cert-tab" data-filter="oracle">Oracle Cloud Infrastructure(OCI)</button>
-                <button class="cert-tab" data-filter="unstop">Unstop</button>
+                <!-- <button class="cert-tab" data-filter="unstop">Unstop</button> -->
                 <button class="cert-tab" data-filter="udemy">Udemy</button>
                 <button class="cert-tab" data-filter="LL">Linkedin Learning</button>
                 <button class="cert-tab" data-filter="cisco">Cisco</button>
@@ -584,7 +591,7 @@
                     </div>
                 </div>
 
-                <!-- Unstop Cards -->
+                <!-- Unstop Cards
                 <div class="cert-card fade-in-up delay-200" data-category="unstop"
                     onclick="openCertModal('cert-unstop-1')">
                     <div class="cert-icon">
@@ -599,7 +606,7 @@
                         <p>Unstop</p>
                         <span class="cert-date">2024</span>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Udemy Cards -->
                 <div class="cert-card fade-in-up delay-200" data-category="udemy"
@@ -617,6 +624,43 @@
                         <span class="cert-date">2023</span>
                     </div>
                 </div>
+
+
+                <!-- LinkedIn Learning Cards -->
+                <div class="cert-card fade-in-up delay-200" data-category="LL" onclick="openCertModal('cert-LL-1')">
+                    <div class="cert-icon">
+                        <img src="assets/images/LL.png" style="border-radius: 12px;" alt="" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                        </img>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Six Sigma Green Belt</h3>
+                        <p>LinkedIn Learning</p>
+                        <span class="cert-date">2025</span>
+                    </div>
+                </div>
+
+
+                <div class="cert-card fade-in-up delay-200" data-category="LL" onclick="openCertModal('cert-LL-2')">
+                    <div class="cert-icon">
+                        <img src="assets/images/LL.png" style="border-radius: 12px;" alt="" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                        </img>
+                    </div>
+                    <div class="cert-content">
+                        <h3>AWS Essential</h3>
+                        <p>LinkedIn Learning</p>
+                        <span class="cert-date">2025</span>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -740,8 +784,8 @@
             "title": "Google Cybersecurity Professional Certificate",
             "issuer": "Coursera / Google",
             "date": "2023",
-            "image": "assets/images/coursera-deep-learning.jpg",
-            "link": "#"
+            "image": "assets/documents/Coursera/image.png",
+            "link": "https://coursera.org/share/b42c2e6c7f67eea69ae73575029c9dba"
         }
     </script>
 
@@ -827,6 +871,25 @@
             "date": "2023",
             "image": "assets/images/udemy-python.jpg",
             "link": "#"
+        }
+    </script>
+
+    <script id="cert-LL-1-data" type="application/json">
+        {
+            "title": "Six Sigma Green Belt",
+            "issuer": "LinkedIn Learning",
+            "date": "2025",
+            "image": "assets/documents/LL/SS.png",
+            "link": "https://www.linkedin.com/learning/certificates/5d0b7f20fe59ecfcc25cae7e15c0e12c3b16084b68157932673cfff4f5de42fb?trk=share_certificate"
+        }
+    </script>
+    <script id="cert-LL-2-data" type="application/json">
+        {
+            "title": "AWS Essential",
+            "issuer": "LinkedIn Learning",
+            "date": "2025",
+            "image": "assets/documents/LL/AWS.png",
+            "link": "https://www.linkedin.com/learning/certificates/8b4ae8ef3574a67e28fb4e016e0460f340749c9712c49e964788742acb0b9b86?trk=share_certificate"
         }
     </script>
 

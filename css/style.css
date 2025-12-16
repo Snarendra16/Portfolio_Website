@@ -152,6 +152,20 @@ button {
     color: var(--accent-color);
 }
 
+.nav-btn {
+    padding: 8px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    color: var(--accent-color) !important;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: var(--accent-color);
+    color: var(--bg-color) !important;
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
 #theme-toggle {
     color: var(--text-color);
     display: flex;
@@ -310,52 +324,32 @@ body.hovering .cursor-outline {
     color: var(--text-muted);
 }
 
-.about-cards {
+/* Profile Image Styles */
+.about-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     position: relative;
+}
+
+.about-profile-img {
+    width: 300px;
     height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 0 30px var(--accent-glow);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    filter: grayscale(20%);
+    /* Optional: adds to the vibe */
 }
 
-.glass-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--card-border);
-    padding: 20px;
-    border-radius: 12px;
-    position: absolute;
-    width: 240px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.glass-card h3 {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-    margin-bottom: 5px;
-}
-
-.glass-card p {
-    font-weight: 600;
-}
-
-/* Positioning cards */
-.p-1 {
-    top: 0;
-    left: 0;
-    animation: float 6s ease-in-out infinite;
-}
-
-.p-2 {
-    top: 100px;
-    right: 0;
-    animation: float 6s ease-in-out infinite 2s;
-}
-
-.p-3 {
-    bottom: 0;
-    left: 40px;
-    animation: float 6s ease-in-out infinite 4s;
+.about-profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--accent-glow);
+    filter: grayscale(0%);
+    border-color: var(--text-color);
 }
 
 /* Skills Section */
